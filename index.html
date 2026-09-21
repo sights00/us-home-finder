@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="US Home Finder helps people moving to the United States research apartments and homes that match their budget and requirements.">
+  <title>US Home Finder — Find your next home in the USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><span>US</span> Home Finder</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#cities">Cities</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="#search">Start your search</a>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">U.S. RELOCATION • PROPERTY RESEARCH</p>
+        <h1>Your next U.S. home, <em>without</em> the endless search.</h1>
+        <p class="hero-text">Tell us your budget, destination and requirements. We research available homes and apartments and turn the search into a clear, personalized shortlist.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#search">Start my search <span>→</span></a>
+          <a class="text-link" href="#how">See how it works</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Personalized search</span>
+          <span>✓ Clear comparisons</span>
+          <span>✓ Built for international movers</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Modern U.S. home exterior">
+          <div class="floating-card">
+            <div class="mini-label">MATCH FOUND</div>
+            <strong>12 properties</strong>
+            <span>matching your criteria</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>01</strong><span>Tell us what you need</span></div>
+      <div><strong>02</strong><span>We research & filter</span></div>
+      <div><strong>03</strong><span>You receive your shortlist</span></div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-heading">
+        <p class="eyebrow">THE PROCESS</p>
+        <h2>From “I need a place” to a shortlist worth opening.</h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Tell us your criteria</h3><p>Budget, city, move-in date, bedrooms, furnishing preferences and anything else that matters to you.</p></article>
+        <article><span>02</span><h3>We do the research</h3><p>We search relevant public listings and filter out options that don't fit the criteria you gave us.</p></article>
+        <article><span>03</span><h3>Review your shortlist</h3><p>You get a structured selection with key details so you can compare options without opening dozens of listings.</p></article>
+      </div>
+    </section>
+
+    <section class="cities" id="cities">
+      <div class="section-heading light">
+        <p class="eyebrow">STARTING CITIES</p>
+        <h2>Choose where you're headed.</h2>
+      </div>
+      <div class="city-grid">
+        <div class="city miami"><span>Miami</span><small>Florida</small></div>
+        <div class="city ny"><span>New York</span><small>New York</small></div>
+        <div class="city la"><span>Los Angeles</span><small>California</small></div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">SIMPLE PRICING</p>
+        <h2>Start small. Upgrade when you need more.</h2>
+      </div>
+      <div class="price-grid">
+        <article class="price-card">
+          <p class="plan">STARTER</p><h3>€49</h3><p class="desc">A focused first shortlist.</p>
+          <ul><li>5–10 matching properties</li><li>Basic comparison</li><li>One destination</li><li>Delivered by email</li></ul>
+          <a href="#search" class="button outline">Choose Starter</a>
+        </article>
+        <article class="price-card featured">
+          <div class="popular">MOST REQUESTED</div>
+          <p class="plan">STANDARD</p><h3>€99</h3><p class="desc">A deeper search for serious movers.</p>
+          <ul><li>15–20 matching properties</li><li>Detailed comparison</li><li>Neighborhood research</li><li>Application checklist</li></ul>
+          <a href="#search" class="button primary">Choose Standard</a>
+        </article>
+        <article class="price-card">
+          <p class="plan">PREMIUM</p><h3>€199+</h3><p class="desc">For more complex relocations.</p>
+          <ul><li>Extended property research</li><li>Multiple search rounds</li><li>Deeper area research</li><li>Priority communication</li></ul>
+          <a href="#search" class="button outline">Choose Premium</a>
+        </article>
+      </div>
+      <p class="fine-print">Pricing shown is an MVP concept and should be validated against your actual service scope and applicable laws before launch.</p>
+    </section>
+
+    <section class="search-section" id="search">
+      <div class="form-intro">
+        <p class="eyebrow">START YOUR SEARCH</p>
+        <h2>Tell us what you're looking for.</h2>
+        <p>Submit your requirements and we'll use them to prepare a personalized property research brief.</p>
+      </div>
+      <form id="searchForm">
+        <div class="form-grid">
+          <label>Full name<input required name="name" placeholder="Your name"></label>
+          <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
+          <label>Destination city<select required name="city"><option value="">Select a city</option><option>Miami</option><option>New York</option><option>Los Angeles</option><option>Other</option></select></label>
+          <label>Monthly budget (USD)<input required name="budget" type="number" min="0" placeholder="2000"></label>
+          <label>Move-in date<input required name="date" type="date"></label>
+          <label>Property type<select name="type"><option>Apartment</option><option>House</option><option>Either</option></select></label>
+          <label>Bedrooms<select name="beds"><option>Studio</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></label>
+          <label>Furnished?<select name="furnished"><option>Either</option><option>Furnished</option><option>Unfurnished</option></select></label>
+        </div>
+        <label>Anything else we should know?<textarea name="notes" rows="4" placeholder="Neighborhoods, commute, pets, parking, must-haves..."></textarea></label>
+        <button class="button primary submit" type="submit">Send my requirements <span>→</span></button>
+        <p class="form-note">This form is a demo for the MVP. Connect it to your preferred form/email service before accepting real customer requests.</p>
+        <div id="success" class="success" hidden>Request captured. In the live version, this would be sent to your business inbox.</div>
+      </form>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-heading"><p class="eyebrow">FAQ</p><h2>Questions before you start.</h2></div>
+      <div class="faq-list">
+        <details><summary>Do I need to already be in the U.S.?</summary><p>No. The service is designed to help people research housing before they arrive.</p></details>
+        <details><summary>Do you guarantee that a property will still be available?</summary><p>No. Rental listings can change quickly. A shortlist is research based on the information available at the time of the search.</p></details>
+        <details><summary>Do you act as my real-estate agent?</summary><p>This MVP is positioned as a property research and relocation-assistance service. Regulated brokerage, leasing, negotiation and referral activities may require state-specific licensing or other compliance.</p></details>
+        <details><summary>Can you search a city that isn't listed?</summary><p>The initial version focuses on selected cities. Additional cities can be added as demand is validated.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="eyebrow">READY TO SEARCH?</p>
+      <h2>Less scrolling. More relevant options.</h2>
+      <a class="button light-button" href="#search">Start your property search →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span>US</span> Home Finder</div>
+    <p>Property research & relocation assistance.</p>
+    <div class="footer-links"><a href="#faq">FAQ</a><a href="#pricing">Pricing</a><a href="#search">Contact</a></div>
+    <small>© 2026 US Home Finder. MVP concept.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
