@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>US Home Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#top"><span>US</span> Home Finder</a>
+<nav><a href="#how" data-i18n="how">How it works</a><a href="#cities" data-i18n="cities">Cities</a><a href="#pricing" data-i18n="pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+<div class="right"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="fr">FR</button></div><a class="navcta" href="#search" data-i18n="start">Start your search</a></div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div><p class="eyebrow" data-i18n="eyebrow">U.S. RELOCATION • PROPERTY RESEARCH</p>
+<h1 data-i18n="title">Your next U.S. home, <em>without</em> the endless search.</h1>
+<p class="lead" data-i18n="intro">Tell us your budget, destination and requirements. We research available homes and apartments and turn the search into a clear, personalized shortlist.</p>
+<div class="actions"><a class="btn dark" href="#search" data-i18n="start2">Start my search →</a><a href="#how" class="under" data-i18n="learn">See how it works</a></div>
+<div class="trust"><span data-i18n="t1">✓ Personalized search</span><span data-i18n="t2">✓ Clear comparisons</span><span data-i18n="t3">✓ Built for international movers</span></div></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"><div class="float"><small data-i18n="match">MATCH FOUND</small><b>12 <span data-i18n="props">properties</span></b><span data-i18n="match2">matching your criteria</span></div></div>
+</section>
+
+<section class="stats"><div><b>01</b><span data-i18n="s1">Tell us what you need</span></div><div><b>02</b><span data-i18n="s2">We research & filter</span></div><div><b>03</b><span data-i18n="s3">You receive your shortlist</span></div></section>
+
+<section class="section" id="how"><p class="eyebrow" data-i18n="process">THE PROCESS</p><h2 data-i18n="processTitle">From “I need a place” to a shortlist worth opening.</h2>
+<div class="steps"><article><i>01</i><h3 data-i18n="step1">Tell us your criteria</h3><p data-i18n="step1p">Budget, city, move-in date, bedrooms, furnishing preferences and anything else that matters to you.</p></article>
+<article><i>02</i><h3 data-i18n="step2">We do the research</h3><p data-i18n="step2p">We search relevant public listings and filter out options that don't fit your criteria.</p></article>
+<article><i>03</i><h3 data-i18n="step3">Review your shortlist</h3><p data-i18n="step3p">You get a structured selection with key details so you can compare options quickly.</p></article></div></section>
+
+<section class="cities" id="cities"><p class="eyebrow">STARTING CITIES</p><h2 data-i18n="cityTitle">Choose where you're headed.</h2>
+<div class="citygrid"><div class="city miami"><strong>Miami</strong><small>Florida</small></div><div class="city ny"><strong>New York</strong><small>New York</small></div><div class="city la"><strong>Los Angeles</strong><small>California</small></div></div></section>
+
+<section class="section cream" id="pricing"><p class="eyebrow" data-i18n="priceEyebrow">SIMPLE PRICING</p><h2 data-i18n="priceTitle">Start small. Upgrade when you need more.</h2>
+<div class="prices">
+<article><small>STARTER</small><h3>€49</h3><p data-i18n="p1">A focused first shortlist.</p><ul><li data-i18n="p11">5–10 matching properties</li><li data-i18n="p12">Basic comparison</li><li data-i18n="p13">One destination</li></ul><a class="btn outline" href="#search" data-i18n="choose">Choose Starter</a></article>
+<article class="featured"><label data-i18n="popular">MOST REQUESTED</label><small>STANDARD</small><h3>€99</h3><p data-i18n="p2">A deeper search for serious movers.</p><ul><li data-i18n="p21">15–20 matching properties</li><li data-i18n="p22">Detailed comparison</li><li data-i18n="p23">Neighborhood research</li><li data-i18n="p24">Application checklist</li></ul><a class="btn dark" href="#search" data-i18n="choose2">Choose Standard</a></article>
+<article><small>PREMIUM</small><h3>€199+</h3><p data-i18n="p3">For more complex relocations.</p><ul><li data-i18n="p31">Extended property research</li><li data-i18n="p32">Multiple search rounds</li><li data-i18n="p33">Priority communication</li></ul><a class="btn outline" href="#search" data-i18n="choose3">Choose Premium</a></article>
+</div></section>
+
+<section class="formsec" id="search"><div><p class="eyebrow" data-i18n="formEyebrow">START YOUR SEARCH</p><h2 data-i18n="formTitle">Tell us what you're looking for.</h2><p data-i18n="formIntro">Submit your requirements and we'll prepare a personalized property research brief.</p></div>
+<div id="form-success" data-fs-success class="ok"></div>
+<div id="form-error" data-fs-error class="form-error"></div>
+<form id="form" action="https://formspree.io/f/xljdjpeg" method="POST"><div class="fields">
+<label><span data-i18n="name">Full name</span><input required name="name" placeholder="Your name" data-fs-field><span class="field-error" data-fs-error="name"></span></label>
+<label><span data-i18n="email">Email</span><input required type="email" name="email" placeholder="you@example.com" data-fs-field><span class="field-error" data-fs-error="email"></span></label>
+<label><span data-i18n="dest">Destination city</span><select required name="city" data-fs-field><option value="" data-i18n="selectCity">Select a city</option><option>Miami</option><option>New York</option><option>Los Angeles</option><option>Other</option></select><span class="field-error" data-fs-error="city"></span></label>
+<label><span data-i18n="budget">Monthly budget (USD)</span><input required name="budget" type="number" placeholder="2000" data-fs-field><span class="field-error" data-fs-error="budget"></span></label>
+<label><span data-i18n="date">Move-in date</span><input required name="date" type="date" data-fs-field><span class="field-error" data-fs-error="date"></span></label>
+<label><span data-i18n="type">Property type</span><select name="type"><option data-i18n="apt">Apartment</option><option data-i18n="house">House</option><option data-i18n="either">Either</option></select></label>
+<label><span data-i18n="beds">Bedrooms</span><select name="beds"><option>Studio</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></label>
+<label><span data-i18n="furnished">Furnished?</span><select name="furnished"><option data-i18n="either">Either</option><option data-i18n="yes">Furnished</option><option data-i18n="no">Unfurnished</option></select></label></div>
+<label><span data-i18n="notes">Anything else we should know?</span><textarea name="notes" placeholder="Neighborhoods, commute, pets, parking, must-haves..." data-fs-field></textarea><span class="field-error" data-fs-error="notes"></span></label>
+<button class="btn dark" type="submit" data-i18n="send" data-fs-submit-btn>Send my requirements →</button><p class="note" data-i18n="note">Your request will be securely sent to US Home Finder.</p></form></section>
+
+<section class="section" id="faq"><p class="eyebrow">FAQ</p><h2 data-i18n="faqTitle">Questions before you start.</h2><div class="faq">
+<details><summary data-i18n="q1">Do I need to already be in the U.S.?</summary><p data-i18n="a1">No. The service is designed to help people research housing before they arrive.</p></details>
+<details><summary data-i18n="q2">Do you guarantee that a property will still be available?</summary><p data-i18n="a2">No. Rental listings can change quickly. Shortlists reflect information available at the time of the search.</p></details>
+<details><summary data-i18n="q3">Do you act as my real-estate agent?</summary><p data-i18n="a3">This service is positioned as property research and relocation assistance. Regulated brokerage, leasing, negotiation and referral activities may require state-specific compliance.</p></details>
+</div></section>
+<section class="final"><p class="eyebrow">READY TO SEARCH?</p><h2 data-i18n="final">Less scrolling. More relevant options.</h2><a class="btn light" href="#search" data-i18n="finalBtn">Start your property search →</a></section>
+</main>
+<footer><div class="brand"><span>US</span> Home Finder</div><p data-i18n="foot">Property research & relocation assistance.</p><small>© 2026 US Home Finder. MVP concept.</small></footer>
+<script src="script.js"></script>
+</body></html>
